@@ -1,5 +1,6 @@
 flask
-opencv-python
+# opencv-python # devlopment only, dont use in production
+opencv-python-headless # lib for production
 google-genai
 dotenv
 numpy
