@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>QRcode Decoder</title>
+    </head>
+    <body>
+        <h1>Kirim qr code dan dapatkan hasil decodenya</h1>
+        <h3>note: pastikan gambarnya jelas/tidak blur</h3>
+
+        <form action="/decode" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required />
+            <button type="submit">Kirim</button>
+        </form>
+        <div>
+            <h2>{{status}}</h2>
+            <p>{{data}}</p>
+            <p>{{response}}</p>
+        </div>
+    </body>
+</html>
