@@ -1,6 +1,14 @@
+# requirements.txt
+
 flask
-# opencv-python # devlopment only, dont use in production
-opencv-python-headless # lib for production
 google-genai
-dotenv
+python-dotenv
 numpy
+
+# Library OpenCV untuk Production
+opencv-python-headless
+
+# === PENTING: Paket ini menginstall dependensi sistem Linux untuk OpenCV ===
+# Ini akan menjalankan perintah 'apt-get install' otomatis di Vercel
+--find-links https://github.com/julian-r/python-wheels/releases
+opencv-contrib-python-headless==4.8.1.78

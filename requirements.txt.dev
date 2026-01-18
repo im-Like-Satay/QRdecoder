@@ -1,0 +1,7 @@
+flask
+opencv-python
+google-genai
+dotenv
+numpy
+
+# THIS FILE IS FOR DEVELOPMENT ONLY
